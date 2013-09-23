@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+   android:background="@drawable/racing"
+    tools:context=".MainActivity" >
+    
+	<ImageView
+	android:id="@+id/start"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:src="@drawable/start" />
+
+	<ImageView
+    android:id="@+id/finish"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="22dp"
+    android:src="@drawable/finish" />
+
+	<ImageView
+	    android:id="@+id/player2"
+	    android:layout_width="100dp"
+	    android:layout_height="100dp"
+	    android:layout_alignRight="@+id/start"
+	    android:layout_alignTop="@+id/start"
+	    android:layout_marginRight="25dp"
+	    android:layout_marginTop="48dp"
+	    android:src="@drawable/blair" />
+
+	<ImageView
+	    android:id="@+id/player1"
+	    android:layout_width="100dp"
+	    android:layout_height="100dp"
+	    android:layout_alignTop="@+id/player2"
+	    android:layout_marginRight="30dp"
+	    android:layout_toLeftOf="@+id/player2"
+	    android:src="@drawable/reiji" />
+
+	<TextView
+	    android:id="@+id/text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/player1"
+	    android:layout_alignTop="@+id/start"
+	    android:text="TextView" />
+    
+</RelativeLayout>

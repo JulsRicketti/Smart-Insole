@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegisterActivity" >
+
+    <TextView
+        android:id="@+id/usernameRegisterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/username_register_text" />
+
+    <TextView
+        android:id="@+id/passwordRegisterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameRegisterTextView"
+        android:layout_below="@+id/usernameRegisterTextView"
+        android:layout_marginTop="34dp"
+        android:text="@string/password_register_text" />
+
+    <TextView
+        android:id="@+id/confirmPasswordRegisterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordRegisterTextView"
+        android:layout_below="@+id/passwordRegisterTextView"
+        android:layout_marginTop="31dp"
+        android:text="@string/confirm_password_register_text" />
+
+    <TextView
+        android:id="@+id/emailRegisterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/confirmPasswordRegisterTextView"
+        android:layout_below="@+id/confirmPasswordRegisterTextView"
+        android:layout_marginTop="44dp"
+        android:text="@string/email_register_text" />
+
+    <Button
+        android:id="@+id/doneRegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailRegisterTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="@string/done_button" />
+
+    <EditText
+        android:id="@+id/usernameRegisterEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/usernameRegisterTextView"
+        android:layout_alignBottom="@+id/usernameRegisterTextView"
+        android:layout_alignLeft="@+id/doneRegisterButton"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwordRegisterEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/passwordRegisterTextView"
+        android:layout_alignLeft="@+id/usernameRegisterEditText"
+        android:layout_marginLeft="14dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/confirmPasswordregisterEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/confirmPasswordRegisterTextView"
+        android:layout_toRightOf="@+id/doneRegisterButton"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/gameTitleEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/emailRegisterTextView"
+        android:layout_alignRight="@+id/confirmPasswordregisterEditText"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+</RelativeLayout>
